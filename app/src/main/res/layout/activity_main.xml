@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_about"
+        android:layout_width="122dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="341dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="54dp"
+        android:onClick="navigateALC"
+        android:text="About ALC"
+        app:layout_constraintBottom_toTopOf="@+id/button_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="198dp"
+        android:onClick="navigateProfile"
+        android:text="My Profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_about" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="223dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="90dp"
+        android:text="WELCOME TO ALC 4.0"
+        app:layout_constraintBottom_toTopOf="@+id/button_about"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
